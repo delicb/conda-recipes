@@ -23,5 +23,5 @@ test:
     - wtforms
 
 about:
-  home: https://pypi.python.org/pypi/WTForms
+  home: http://wtforms.simplecodes.com/
   license: BSD License

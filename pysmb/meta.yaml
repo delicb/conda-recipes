@@ -22,7 +22,8 @@ test:
   # Python imports
   imports:
     - smb
+    - nmb
 
 about:
-  home: https://pypi.python.org/pypi/pysmb
-  license: zlib/libpng
+  home: http://miketeo.net/projects/pysmb
+  license: zlib/libpng License

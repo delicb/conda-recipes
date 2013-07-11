@@ -23,5 +23,5 @@ test:
     - pyasn1
 
 about:
-  home: https://pypi.python.org/pypi/pyasn1
+  home: http://pyasn1.sourceforge.net
   license: BSD License

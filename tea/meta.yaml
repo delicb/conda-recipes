@@ -24,6 +24,12 @@ test:
   imports:
     - tea
 
+  commands:
+    - nosetests tea
+
+  requires:
+    - nose
+
 about:
   home: https://bitbucket.org/alefnula/tea
-  license: BSD
+  license: BSD License

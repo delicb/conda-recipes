@@ -27,5 +27,5 @@ test:
     - django-admin --help
 
 about:
-  home: https://www.djangoproject.com
+  home: http://www.djangoproject.com
   license: BSD License

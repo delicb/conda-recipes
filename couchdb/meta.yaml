@@ -1,6 +1,6 @@
 package:
   name: couchdb
-  version: 0.9.0
+  version: 0.9
 
 source:
   fn: CouchDB-0.9.tar.gz
@@ -27,6 +27,12 @@ test:
   # Python imports
   imports:
     - couchdb
+  commands:
+    - couchpy --help
+    - couchdb-dump --help
+    - couchdb-load --help
+    - couchdb-replicate --help
+
 about:
-  home: https://pypi.python.org/pypi/CouchDB
+  home: http://code.google.com/p/couchdb-python/
   license: BSD License
