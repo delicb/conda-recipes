@@ -1,0 +1,29 @@
+package:
+  name: tea
+  version: 0.0.2
+
+source:
+  fn: tea-0.0.2.tar.gz
+  url: https://pypi.python.org/packages/source/t/tea/tea-0.0.2.tar.gz
+  md5: 9b38bbb5b1a6e1e2f2b1b096c796a269
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+    - pywin32 [win]
+    - psutil  [win]
+
+test:
+  # Python imports
+  imports:
+    - tea
+
+about:
+  home: https://bitbucket.org/alefnula/tea
+  license: BSD

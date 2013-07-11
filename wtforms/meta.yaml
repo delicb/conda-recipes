@@ -1,0 +1,27 @@
+package:
+  name: wtforms
+  version: 1.0.4
+
+source:
+  fn: WTForms-1.0.4.zip
+  url: https://pypi.python.org/packages/source/W/WTForms/WTForms-1.0.4.zip
+  md5: f7fe9a18f46dda7f6a2350319949593e
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - wtforms
+
+about:
+  home: https://pypi.python.org/pypi/WTForms
+  license: BSD License

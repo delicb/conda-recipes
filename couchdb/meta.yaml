@@ -1,0 +1,32 @@
+package:
+  name: couchdb
+  version: 0.9.0
+
+source:
+  fn: CouchDB-0.9.tar.gz
+  url: https://pypi.python.org/packages/source/C/CouchDB/CouchDB-0.9.tar.gz
+  md5: 67afd226fed4c641eeb13a9930d334f7
+
+build:
+  number: 0
+  entry_points:
+    - couchpy = couchdb.view:main
+    - couchdb-dump = couchdb.tools.dump:main
+    - couchdb-load = couchdb.tools.load:main
+    - couchdb-replicate = couchdb.tools.replicate:main
+
+requirements:
+  build:
+    - python
+    - distribute
+
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - couchdb
+about:
+  home: https://pypi.python.org/pypi/CouchDB
+  license: BSD License
