@@ -1,0 +1,29 @@
+package:
+  name: django-debug-toolbar
+  version: 0.9.4
+
+source:
+  fn: django-debug-toolbar-0.9.4.tar.gz
+  url: https://pypi.python.org/packages/source/d/django-debug-toolbar/django-debug-toolbar-0.9.4.tar.gz
+  md5: 85c1c70a31f0a3a646a603214d235e9f
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - distribute
+
+  run:
+    - python
+    - django
+
+test:
+  # Python imports
+  imports:
+    - debug_toolbar
+
+about:
+  home: https://github.com/django-debug-toolbar/django-debug-toolbar
+  license: BSD License
