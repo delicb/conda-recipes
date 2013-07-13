@@ -1,0 +1,26 @@
+package:
+  name: logilab-common
+  version: 0.59.1
+
+source:
+  fn: logilab-common-0.59.1.tar.gz
+  url: https://pypi.python.org/packages/source/l/logilab-common/logilab-common-0.59.1.tar.gz
+  md5: 14b3becc67397cdc4b51ced617f2982b
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
+test:
+  imports:
+    - logilab.common
+
+about:
+  home: http://www.logilab.org/project/logilab-common
+  license: LGPL

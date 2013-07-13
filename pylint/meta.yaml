@@ -1,0 +1,35 @@
+package:
+  name: pylint
+  version: 0.28.0
+
+source:
+  fn: pylint-0.28.0.tar.gz
+  url: https://pypi.python.org/packages/source/p/pylint/pylint-0.28.0.tar.gz
+  md5: 1ccd3812c2729b605e5fd9425ef376e6
+
+build:
+  number: 0
+  entry_points:
+    - pylint = pylint:run_pylint
+    - pylint-gui = pylint:run_pylint_gui
+    - epylint = pylint:run_epylint
+    - pyreverse = pylint:run_pyreverse
+    - symilar = pylint:run_symilar
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - logilab-common
+    - logilab-astng
+
+test:
+  imports:
+    - pylint
+  run:
+    - pylint --help
+
+about:
+  home: http://www.pylint.org
+  license: GPL
