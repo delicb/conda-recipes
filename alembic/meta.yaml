@@ -1,0 +1,37 @@
+package:
+  name: alembic
+  version: 0.5.0
+
+source:
+  fn: alembic-0.5.0.tar.gz
+  url: https://pypi.python.org/packages/source/a/alembic/alembic-0.5.0.tar.gz
+  md5: e22d10fd885473eccc9c8c75238e97ce
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+build:
+  number: 0
+  entry_points:
+    - alembic = alembic.config:main
+
+requirements:
+  build:
+    - python
+    - distribute
+    - mako
+    - sqlalchemy
+  run:
+    - python
+    - mako
+    - sqlalchemy
+
+test:
+  # Python imports
+  imports:
+    - alembic
+
+about:
+  home: https://pypi.python.org/pypi/alembic
+  license: MIT License
