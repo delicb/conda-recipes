@@ -1,0 +1,30 @@
+package:
+  name: wmi
+  version: 1.4.9
+
+source:
+  fn: WMI-1.4.9.zip
+  url: https://pypi.python.org/packages/source/W/WMI/WMI-1.4.9.zip
+  md5: e883e155ed5a63b742686816ec762053
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - pywin32
+
+test:
+  # Python imports
+  imports:
+    - wmi
+
+about:
+  home: https://pypi.python.org/pypi/WMI
+  license: MIT License
