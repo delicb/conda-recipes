@@ -1,0 +1,21 @@
+--- setup.py	Tue Jul 16 23:05:11 2013
++++ setup_ch.py	Tue Jul 16 23:28:48 2013
+@@ -56,7 +56,8 @@
+ scripts = getattr(__pkginfo__, 'scripts', [])
+ data_files = getattr(__pkginfo__, 'data_files', None)
+ subpackage_of = getattr(__pkginfo__, 'subpackage_of', None)
+-include_dirs = getattr(__pkginfo__, 'include_dirs', [])
++#include_dirs = getattr(__pkginfo__, 'include_dirs', [])
++include_dirs = []
+ ext_modules = getattr(__pkginfo__, 'ext_modules', None)
+ install_requires = getattr(__pkginfo__, 'install_requires', None)
+ dependency_links = getattr(__pkginfo__, 'dependency_links', [])
+@@ -142,7 +143,7 @@
+                     # process manually python file in include_dirs (test data)
+                     from subprocess import check_call
+                     print('running 2to3 on', dest) # brackets are NOT optional here for py3k compat
+-                    check_call(['2to3', '-wn', dest])
++                    #check_call(['2to3', '-wn', dest])
+ 
+ 
+ def install(**kwargs):
