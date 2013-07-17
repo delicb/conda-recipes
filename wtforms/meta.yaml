@@ -13,6 +13,7 @@ build:
 requirements:
   build:
     - python
+    - distribute [py3k]
 
   run:
     - python

@@ -7,7 +7,7 @@ source:
   url: https://pypi.python.org/packages/source/l/logilab-common/logilab-common-0.59.1.tar.gz
   md5: 14b3becc67397cdc4b51ced617f2982b
   patches:
-    - py3.patch [py3]
+    - py3.patch [py3k]
 
 build:
   number: 0
