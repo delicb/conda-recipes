@@ -1,0 +1,28 @@
+package:
+  name: south
+  version: 0.8.1
+
+source:
+  fn: South-0.8.1.tar.gz
+  url: https://pypi.python.org/packages/source/S/South/South-0.8.1.tar.gz
+  md5: 72deb5c8144a65ac42d1390ff922581d
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+    - django
+
+test:
+  # Python imports
+  imports:
+    - south
+
+about:
+  home: http://south.aeracode.org/
+  license: ache Software License
