@@ -1,0 +1,35 @@
+package:
+  name: mercurial
+  version: 2.6.3
+
+source:
+  fn: mercurial-2.6.3.tar.gz
+  url: https://pypi.python.org/packages/source/M/Mercurial/mercurial-2.6.3.tar.gz
+  md5: 99e311b2202057a259899f67b425e087
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    # If setuptools is required to run setup.py, add distribute to the build
+    # requirements.
+    #
+    # - distribute
+
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - mercurial
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+about:
+  home: http://mercurial.selenic.com/
+  license: GNU General Public License (GPL)
