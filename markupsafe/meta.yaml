@@ -6,9 +6,7 @@ source:
   fn: MarkupSafe-0.18.tar.gz
   url: https://pypi.python.org/packages/source/M/MarkupSafe/MarkupSafe-0.18.tar.gz
   md5: f8d252fd05371e51dec2fe9a36890687
-  # If this is a new build for the same version, increment the build
-  # number. If you do not include this key, it defaults to 0.
-  # number: 1
+
 build:
   number: 0
 

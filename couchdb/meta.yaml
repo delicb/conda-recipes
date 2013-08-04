@@ -1,6 +1,6 @@
 package:
   name: couchdb
-  version: 0.9
+  version: 0.9.0
 
 source:
   fn: CouchDB-0.9.tar.gz

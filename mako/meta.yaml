@@ -7,9 +7,6 @@ source:
   url: https://pypi.python.org/packages/source/M/Mako/Mako-0.8.1.tar.gz
   md5: 96d962464ce6316004af0cc48495d73e
 
-  # If this is a new build for the same version, increment the build
-  # number. If you do not include this key, it defaults to 0.
-  # number: 1
 build:
   number: 0
 

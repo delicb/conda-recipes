@@ -1,6 +1,6 @@
 package:
   name: coverage
-  version: 3.6
+  version: 3.6.0
 
 source:
   fn: coverage-3.6.tar.gz

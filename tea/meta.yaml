@@ -1,11 +1,11 @@
 package:
   name: tea
-  version: 0.0.3
+  version: 0.0.4
 
 source:
-  fn: tea-0.0.3.tar.gz
-  url: https://pypi.python.org/packages/source/t/tea/tea-0.0.3.tar.gz
-  md5: 1f0828e653845c44740d710280214725
+  fn: tea-0.0.4.tar.gz
+  url: https://pypi.python.org/packages/source/t/tea/tea-0.0.4.tar.gz
+  md5: e86cc41ab2a33f8d9d0c990282dd2378
 
 build:
   number: 0
@@ -29,6 +29,7 @@ test:
 
   requires:
     - nose
+    - pyyaml
 
 about:
   home: https://bitbucket.org/alefnula/tea

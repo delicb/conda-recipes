@@ -1,11 +1,11 @@
 package:
   name: mercurial
-  version: 2.6.3
+  version: 2.7.0
 
 source:
-  fn: mercurial-2.6.3.tar.gz
-  url: https://pypi.python.org/packages/source/M/Mercurial/mercurial-2.6.3.tar.gz
-  md5: 99e311b2202057a259899f67b425e087
+  fn: mercurial-2.7.tar.gz
+  url: https://pypi.python.org/packages/source/M/Mercurial/mercurial-2.7.tar.gz
+  md5: 61093c08ca5d8d1310382d17764f0c43
 
 build:
   number: 0
@@ -26,9 +26,8 @@ test:
   imports:
     - mercurial
 
-  # commands:
-    # You can put test commands to be run here.  Use this to test that the
-    # entry points work.
+  commands:
+    - hg help
 
 about:
   home: http://mercurial.selenic.com/
