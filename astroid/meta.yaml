@@ -1,0 +1,29 @@
+package:
+  name: astroid
+  version: 1.0.0
+
+source:
+  fn: astroid-1.0.0.tar.gz
+  url: https://pypi.python.org/packages/source/a/astroid/astroid-1.0.0.tar.gz
+  md5: e74430dfbbe09cd18ef75bd76f95425a
+  patches:
+    - py3.patch [py3k]
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+    - logilab-common
+
+test:
+  imports:
+    - astroid
+
+about:
+  home: http://bitbucket.org/logilab/astroid
+  license: LGPL

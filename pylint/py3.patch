@@ -1,0 +1,12 @@
+--- setup.py    Tue Aug 06 16:03:35 2013
++++ setup_ch.py Wed Aug 07 10:29:17 2013
+@@ -135,7 +135,8 @@
+                     # process manually python file in include_dirs (test data)
+                     from subprocess import call
+                     print('running 2to3 on', dest)
+-                    call(['2to3', '-wn', dest])
++                    call([sys.executable, os.path.join(os.path.dirname(sys.executable), 'Tools', 'Scripts', '2to3.py'), '-wn', dest])
++                    #call(['2to3', '-wn', dest])
+
+
+ def install(**kwargs):
