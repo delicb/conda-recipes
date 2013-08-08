@@ -1,0 +1,26 @@
+package:
+  name: pyrss2gen
+  version: 1.1
+
+source:
+  fn: PyRSS2Gen-1.1.tar.gz
+  url: https://pypi.python.org/packages/source/P/PyRSS2Gen/PyRSS2Gen-1.1.tar.gz
+  md5: 3529f831c6a4ed717b55315974e16317
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
+test:
+  imports:
+    - PyRSS2Gen
+
+about:
+  home: http://dalkescientific.com/Python/PyRSS2Gen.html
+  license: BSD License

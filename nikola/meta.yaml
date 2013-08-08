@@ -1,0 +1,41 @@
+package:
+  name: nikola
+  version: 5.5.1
+
+source:
+  fn: nikola-5.5.1.tar.gz
+  url: https://pypi.python.org/packages/source/N/Nikola/nikola-5.5.1.tar.gz
+  md5: e4280bfb6df2a219c86300dd7ba8cad6
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - distribute
+
+  run:
+    - python
+    - doit
+    - pygments
+    - imaging
+    - docutils
+    - mako
+    - unidecode
+    - lxml
+    - yapsy
+    - pyrss2gen
+    - pytz
+    - jinja2
+    - markdown
+    - requests
+    - six
+
+test:
+  imports:
+    - nikola
+
+about:
+  home: http://nikola.ralsina.com.ar
+  license: MIT License

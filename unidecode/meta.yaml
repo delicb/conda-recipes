@@ -1,0 +1,27 @@
+package:
+  name: unidecode
+  version: 0.04.13
+
+source:
+  fn: Unidecode-0.04.13.tar.gz
+  url: https://pypi.python.org/packages/source/U/Unidecode/Unidecode-0.04.13.tar.gz
+  md5: 74fabcc0aa3c3b185181df7fce8cab09
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
+test:
+
+  imports:
+    - unidecode
+
+about:
+  home: https://pypi.python.org/pypi/Unidecode
+  license: GNU General Public License v2 or later (GPLv2+)

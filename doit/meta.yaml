@@ -1,0 +1,26 @@
+package:
+  name: doit
+  version: 0.22.1
+
+source:
+  fn: doit-0.22.1.tar.gz
+  url: https://pypi.python.org/packages/source/d/doit/doit-0.22.1.tar.gz
+  md5: b479de2755c613ad30a2988060881a70
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
+test:
+  imports:
+    - doit
+
+about:
+  home: http://pydoit.org
+  license: MIT License
