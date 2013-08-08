@@ -1,0 +1,27 @@
+package:
+  name: itsdangerous
+  version: 0.22
+
+source:
+  fn: itsdangerous-0.22.tar.gz
+  url: https://pypi.python.org/packages/source/i/itsdangerous/itsdangerous-0.22.tar.gz
+  md5: ba715357eadfb045ca06e11869366bfd
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+ 
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - itsdangerous
+
+about:
+  home: http://github.com/mitsuhiko/itsdangerous
+  license: BSD License

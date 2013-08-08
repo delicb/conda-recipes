@@ -1,0 +1,35 @@
+package:
+  name: flask
+  version: 0.10.1
+
+source:
+  fn: Flask-0.10.1.tar.gz
+  url: https://pypi.python.org/packages/source/F/Flask/Flask-0.10.1.tar.gz
+  md5: 378670fe456957eb3c27ddaef60b2b24
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - distribute
+    - itsdangerous
+    - jinja2
+    - werkzeug
+
+  run:
+    - python
+    - werkzeug
+    - jinja2
+    - markupsafe
+    - itsdangerous
+
+test:
+  # Python imports
+  imports:
+    - flask
+
+about:
+  home: http://github.com/mitsuhiko/flask/
+  license: BSD License
