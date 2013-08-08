@@ -1,0 +1,28 @@
+package:
+  name: werkzeug
+  version: 0.9.3
+
+source:
+  fn: Werkzeug-0.9.3.tar.gz
+  url: https://pypi.python.org/packages/source/W/Werkzeug/Werkzeug-0.9.3.tar.gz
+  md5: a040b7e8861111926e5cbe968b36d7c5
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - distribute
+
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - werkzeug
+
+about:
+  home: http://werkzeug.pocoo.org/
+  license: BSD License
