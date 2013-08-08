@@ -1,0 +1,32 @@
+package:
+  name: jinja2
+  version: 2.7.1
+
+source:
+  fn: Jinja2-2.7.1.tar.gz
+  url: https://pypi.python.org/packages/source/J/Jinja2/Jinja2-2.7.1.tar.gz
+  md5: 282aed153e69f970d6e76f78ed9d027a
+
+build:
+  number: 0
+  entry_points:
+    - jinja2 = jinja2.ext:babel_extract
+
+requirements:
+  build:
+    - python
+    - distribute
+    - markupsafe
+
+  run:
+    - python
+    - markupsafe
+
+test:
+  # Python imports
+  imports:
+    - jinja2
+
+about:
+  home: http://jinja.pocoo.org/
+  license: BSD License
