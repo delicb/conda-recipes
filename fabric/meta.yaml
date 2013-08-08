@@ -1,0 +1,31 @@
+package:
+  name: fabric
+  version: 1.7.0
+
+source:
+  fn: Fabric-1.7.0.tar.gz
+  url: https://pypi.python.org/packages/source/F/Fabric/Fabric-1.7.0.tar.gz
+  md5: 48e4176f0be925a44ef83ce0efc6d69b
+
+build:
+  number: 0
+  entry_points:
+    - fab = fabric.main:main
+
+requirements:
+  build:
+    - python
+    - distribute
+    - paramiko
+
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - fabric
+
+about:
+  home: http://github.com/mitsuhiko/flask/
+  license: BSD License
