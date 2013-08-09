@@ -1,0 +1,16 @@
+package:
+  name: ipython-all
+  version: 1.0.0
+
+build:
+  number: 0
+
+requirements:
+  run:
+    - python
+    - ipython-notebook
+    - ipython-qtconsole
+
+about:
+  home: http://ipython.org
+  license: BSD License
