@@ -1,0 +1,29 @@
+package:
+  name: ipython-notebook
+  version: 1.0.0
+
+build:
+  number: 0
+
+requirements:
+  run:
+    - python
+    - ipython
+    - tornado
+    - jinja2
+    - pygments
+
+app:
+  entry: ipython notebook     [not osx]
+  icon: ipynb_icon_64x64.png
+  summary: IPython Notebook
+  type: web
+  cli_opts:                    [not osx]
+    - name: port               [not osx]
+      args: --port %s          [not osx]
+      default: 8080            [not osx]
+      summary: Server port ... [not osx]
+
+about:
+  home: http://ipython.org
+  license: BSD License
