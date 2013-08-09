@@ -1,0 +1,8 @@
+--- __pkginfo__.py      Tue Aug 06 16:03:34 2013
++++ __pkginfo__ch.py    Fri Aug 09 19:52:44 2013
+@@ -66,4 +66,4 @@
+            for filename in ('pylint', 'pylint-gui', "symilar", "epylint",
+                             "pyreverse")]
+
+-include_dirs = ['test']
++include_dirs = []
