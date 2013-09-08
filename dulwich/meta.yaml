@@ -1,0 +1,27 @@
+package:
+  name: dulwich
+  version: 0.9.0
+
+source:
+  fn: dulwich-0.9.0.tar.gz
+  url: http://samba.org/~jelmer/dulwich/dulwich-0.9.0.tar.gz
+  #md5: 
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - distribute
+
+  run:
+    - python
+
+test:
+  imports:
+    - dulwich
+
+about:
+  home: http://samba.org/~jelmer/dulwich
+  license: GPLv2
