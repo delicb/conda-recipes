@@ -1,0 +1,26 @@
+package:
+  name: smartypants
+  version: 1.8.2
+
+source:
+  fn: smartypants-1.8.2.tar.gz
+  url: https://pypi.python.org/packages/source/s/smartypants/smartypants-1.8.2.tar.gz
+  md5: 6d59862c4056ab64a164fdceadc66193
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
+test:
+  imports:
+    - smartypants
+
+about:
+  home: https://bitbucket.org/livibetter/smartypants.py
+  license: BSD License

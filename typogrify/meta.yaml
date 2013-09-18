@@ -1,0 +1,29 @@
+package:
+  name: typogrify
+  version: 2.0.0
+
+source:
+  fn: typogrify-2.0.0.tar.gz
+  url: https://pypi.python.org/packages/source/t/typogrify/typogrify-2.0.0.tar.gz
+  md5: ef4dc943e947ff57814bcda8d259a3f0
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - distribute
+    - smartypants
+
+  run:
+    - python
+    - smartypants
+
+test:
+  imports:
+    - typogrify
+
+about:
+  home: https://github.com/mintchaos/typogrify
+  license: BSD License

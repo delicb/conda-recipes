@@ -1,0 +1,27 @@
+package:
+  name: configparser
+  version: 3.3.0r2
+
+source:
+  fn: configparser-3.3.0r2.tar.gz
+  url: https://pypi.python.org/packages/source/c/configparser/configparser-3.3.0r2.tar.gz
+  md5: dda0e6a43e9d8767b36d10f1e6770f09
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - distribute
+
+  run:
+    - python
+
+test:
+  imports:
+    - configparser
+
+about:
+  home: http://docs.python.org/3/library/configparser.html
+  license: MIT License

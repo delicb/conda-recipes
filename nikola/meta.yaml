@@ -1,11 +1,11 @@
 package:
   name: nikola
-  version: 5.5.1
+  version: 6.0.3
 
 source:
-  fn: nikola-5.5.1.tar.gz
-  url: https://pypi.python.org/packages/source/N/Nikola/nikola-5.5.1.tar.gz
-  md5: e4280bfb6df2a219c86300dd7ba8cad6
+  fn: nikola-6.0.3.zip
+  url: https://github.com/getnikola/nikola/archive/nikola-6.0.3.zip
+  md5: afcfa9a2adcfecbf4f972980e3e06a45
 
 build:
   number: 1
@@ -18,19 +18,16 @@ requirements:
   run:
     - python
     - doit
-    - pygments
-    - imaging
     - docutils
     - mako
+    - pillow
+    - pygments
     - unidecode
     - lxml
     - yapsy
     - pyrss2gen
     - pytz
-    - jinja2
-    - markdown
-    - requests
-    - six
+    - configparser [py27]
 
 test:
   imports:
