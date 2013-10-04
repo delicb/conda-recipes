@@ -1,0 +1,32 @@
+package:
+  name: wtforms-tornado
+  version: 0.0.1
+
+source:
+  fn: wtforms-tornado-0.0.1.tar.gz
+  url: https://pypi.python.org/packages/source/w/wtforms-tornado/wtforms-tornado-0.0.1.tar.gz
+  md5: 68d14c4a6117e116897a46d87070f2a4
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - distribute
+    - tornado
+    - wtforms
+
+  run:
+    - python
+    - tornado
+    - wtforms
+
+test:
+  # Python imports
+  imports:
+    - wtforms_tornado
+
+about:
+  home: https://github.com/puentesarrin/wtforms-tornado
+  license: Apache Software License
