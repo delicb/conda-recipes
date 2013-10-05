@@ -1,11 +1,11 @@
 package:
   name: doit
-  version: 0.22.1
+  version: 0.23.0
 
 source:
   fn: doit-0.22.1.tar.gz
-  url: https://pypi.python.org/packages/source/d/doit/doit-0.22.1.tar.gz
-  md5: b479de2755c613ad30a2988060881a70
+  url: https://pypi.python.org/packages/source/d/doit/doit-0.23.0.tar.gz
+  md5: ac0427ac29cf0e3a22fa9c3089f16dea
 
 build:
   number: 2
