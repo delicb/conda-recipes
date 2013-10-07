@@ -1,0 +1,28 @@
+package:
+  name: futures
+  version: 2.1.4
+
+source:
+  fn: futures-2.1.4.tar.gz
+  url: https://pypi.python.org/packages/source/f/futures/futures-2.1.4.tar.gz
+  md5: c6116d2d8c3c1a7c386ce196a2c98a4d
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - distribute
+
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - concurrent.futures
+
+about:
+  home: http://code.google.com/p/pythonfutures
+  license: BSD License
