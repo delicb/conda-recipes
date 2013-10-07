@@ -1,11 +1,11 @@
 package:
   name: pelican
-  version: 3.2.2
+  version: 3.3
 
 source:
-  fn: pelican-3.2.2.tar.gz
-  url: https://pypi.python.org/packages/source/p/pelican/pelican-3.2.2.tar.gz
-  md5: cf9af2669dbd84c3e83b546b70b1a78c
+  fn: pelican-3.3.tar.gz
+  url: https://pypi.python.org/packages/source/p/pelican/pelican-3.3.tar.gz
+  md5: 0e1c16a13290e19e02b739ad7a9b3850
 
 build:
   entry_points:
@@ -28,6 +28,7 @@ requirements:
     - blinker
     - unidecode
     - six
+    - markupsafe
     - markdown
     - typogrify
 
@@ -41,6 +42,7 @@ requirements:
     - blinker
     - unidecode
     - six
+    - markupsafe
     - markdown
     - typogrify
 

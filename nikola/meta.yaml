@@ -1,11 +1,11 @@
 package:
   name: nikola
-  version: 6.0.3
+  version: 6.1.1
 
 source:
-  fn: nikola-6.0.3.zip
-  url: https://github.com/getnikola/nikola/archive/nikola-6.0.3.zip
-  md5: afcfa9a2adcfecbf4f972980e3e06a45
+  fn: nikola-6.1.1.tar.gz
+  url: https://pypi.python.org/packages/source/N/Nikola/nikola-6.1.1.tar.gz
+  md5: 11ce4cb0223d06fb9df03ff4128bc627
 
 build:
   number: 1
@@ -27,6 +27,7 @@ requirements:
     - yapsy
     - pyrss2gen
     - pytz
+    - logbook
     - configparser [py27]
 
 test:
