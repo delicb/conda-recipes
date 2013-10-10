@@ -1,11 +1,11 @@
 package:
   name: wtforms
-  version: 1.0.4
+  version: 1.0.5
 
 source:
-  fn: WTForms-1.0.4.zip
-  url: https://pypi.python.org/packages/source/W/WTForms/WTForms-1.0.4.zip
-  md5: f7fe9a18f46dda7f6a2350319949593e
+  fn: WTForms-1.0.5.zip
+  url: https://pypi.python.org/packages/source/W/WTForms/WTForms-1.0.5.zip
+  md5: a7ba0af8ed65267e5b421d34940d0151
 
 build:
   number: 0
