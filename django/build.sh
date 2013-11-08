@@ -1,7 +1,6 @@
 #!/bin/bash
 
-$PYTHON setup.py install_lib
-$PYTHON setup.py install_data
+$PYTHON setup.py install
 
 # Add more build steps here, if they are necessary.
 
