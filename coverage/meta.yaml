@@ -1,14 +1,16 @@
 package:
   name: coverage
-  version: 3.6.0
+  version: 3.7.0
 
 source:
-  fn: coverage-3.6.tar.gz
-  url: https://pypi.python.org/packages/source/c/coverage/coverage-3.6.tar.gz
-  md5: 67d4e393f4c6a5ffc18605409d2aa1ac
+  fn: coverage-3.7.tar.gz
+  url: https://pypi.python.org/packages/source/c/coverage/coverage-3.7.tar.gz
+  md5: 055d82e6849d882ec6cf2ae1faca8e56
 
 build:
   number: 0
+  entry_points:
+    - coverage = coverage:main
 
 requirements:
   build:
