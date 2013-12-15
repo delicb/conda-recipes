@@ -1,11 +1,11 @@
 package:
   name: south
-  version: 0.8.1
+  version: 0.8.4
 
 source:
-  fn: South-0.8.1.tar.gz
-  url: https://pypi.python.org/packages/source/S/South/South-0.8.1.tar.gz
-  md5: 72deb5c8144a65ac42d1390ff922581d
+  fn: South-0.8.4.tar.gz
+  url: https://pypi.python.org/packages/source/S/South/South-0.8.4.tar.gz
+  md5: ccd6ebadd3e2c8c6ef16d771632f7840
 
 build:
   number: 0
